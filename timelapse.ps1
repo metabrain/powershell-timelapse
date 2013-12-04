@@ -3,11 +3,12 @@
 ## Usage:
 ##   Export-Screenshot sshot.png
 ##   Export-Screenshot screen.jpg (New-Object Drawing.Rectangle 0, 0, 640, 480)
-##	 Start-TimeLapse "D:\Jogos\Football Manager 2012\fm.exe" "D:\TimeLapses\" 1 
-##		(time delay between screenshots)
+##	 Start-TimeLapse "D:\Jogos\Football Manager 2012\fm.exe" "D:\TimeLapses\" 10 
+##		(here, 10 sec delay between screenshots)
 #####################################################################################
 
-Add-PSSnapin WASP
+#Add-PSSnapin WASP
+import-module -name ./WASP -verbose
 
 # Get a screenshot as a bitmap      
 function Get-Screenshot ([Drawing.Rectangle]$bounds) {

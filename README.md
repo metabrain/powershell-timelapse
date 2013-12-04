@@ -24,8 +24,8 @@ UNTESTED
 
 REQUIREMENTS
 ============
-- WASP plugin for Powershell installed (http://wasp.codeplex.com/)
 - Powershell (Windows 7+)
+- (NOW INCLUDED AS A FOLDER FOR EASY USE) WASP plugin for Powershell (http://wasp.codeplex.com/)
 
 HOW TO USE
 ==========
@@ -44,9 +44,26 @@ it should have the following :
 - Target: "C:\PATH_TO_GAME\game.exe"
 - Start in: "C:\PATH_TO_GAME\" //normaly same folder as above
 
-1. Put the timelapse.ps1 script in the folder listed in "Start in:" 
+1. Put the contents of this project (timelapse.ps1 and the WASP folder) in the folder listed in "Start in:" (e.g.: the folder of the game containing the executable!)
 2. Change target to : (don't forget to change the Powershell path if yours is different!) 
   %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -command "& { . .\timelapse.ps1; Start-TimeLapse '.\game.exe' 'D:\TimeLapses\' 10 }"
 3. Apply and save settings.
-3. Now just double-click on the shortcut. Powershell will open, launch your game/application and start saving screenshots to "D:\TimeLapses\NAME_OF_GAME_EXECUTABLE\" !
-You can change the timelapse folder to any you want, just don't forget to create it before launching the script!
+3. Now just double-click on the shortcut. Powershell will open, launch your game/application and start saving screenshots to "D:\TimeLapses\NAME_OF_GAME_EXECUTABLE\"!
+
+You can, of course, change the timelapse folder to any you want, just don't forget to create it before launching the script.
+Also, the "10" above is the number of seconds between each screenshot. I don't recommend lower because it will take too much space on your HDD after some hours playing!
+
+HOW TO MAKE A VIDEO FROM ALL THOSE SCREENSHOTS
+==============================================
+
+After some hours, you will have millions of screenshots. Most video software I used crashed with so many files (Sony Vegas for one). The way I recommend is using **ffmpeg***.
+
+1. Install **ffmpeg** (in Windows: http://www.wikihow.com/Install-FFmpeg-on-Windows)
+2. Use ffmpeg ! (read this tutorial to know more http://www.itforeveryone.co.uk/image-to-video.html)
+
+Personally, I use:
+ffmpeg -r 25 -qscale 1 -i *.jpg output.mp4
+
+
+
+Enjoy!
