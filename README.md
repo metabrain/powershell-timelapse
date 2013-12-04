@@ -2,7 +2,7 @@ powershell-timelapse
 ====================
 
 A simple script for timelapsing applications (such games) in Windows using Powershell!
-Watch here the result of this script using Europa Universalis IV on a dual monitor setup : http://youtu.be/iOvzb0e7W-c
+Watch here in 1080p the result of this script using Europa Universalis IV on a dual monitor setup : http://youtu.be/lLEOny65nkg
 
 FEATURES
 ========
