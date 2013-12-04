@@ -2,6 +2,7 @@ powershell-timelapse
 ====================
 
 A simple script for timelapsing applications (such games) in Windows using Powershell!
+Watch here the result of this script using Europa Universalis IV on a dual monitor setup : http://youtu.be/iOvzb0e7W-c
 
 FEATURES
 ========
@@ -14,13 +15,13 @@ FEATURES
 
 TESTED ON
 =========
-- Football Manager 2012 - Windowed mode (6 seasons, or 80GBs worth of PNGs)
+- Football Manager 2012 - Windowed mode (6 seasons, or 80GBs worth of JPGs)
 - Don't Starve - Windows mode again...
 
 UNTESTED
 ========
 - Full screen mode? Never tested it because I don't play in full screen but should work...
-- Games anything other than DirectX
+- Games using anything other than DirectX
 
 REQUIREMENTS
 ============
