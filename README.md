@@ -61,8 +61,13 @@ After some hours, you will have millions of screenshots. Most video software I u
 1. Install **ffmpeg** (in Windows: http://www.wikihow.com/Install-FFmpeg-on-Windows)
 2. Use ffmpeg ! (read this tutorial to know more http://www.itforeveryone.co.uk/image-to-video.html)
 
-Personally, I use:
-ffmpeg -r 25 -qscale 1 -i *.jpg output.mp4
+Personally, I use the following. 10 screenshots per second is good for a fast, but still understandable timelapse IMHO.
+
+ffmpeg -r 10 -i PREFIX_%016d.jpg -c:v libx264 -r 30 -pix_fmt yuv420p OUTPUT_FILE.mp4
+
+
+
+
 
 
 
